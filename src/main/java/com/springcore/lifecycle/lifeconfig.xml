@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ ">
+ 
+ 
+<!--  <context:annotation-config />            to unalble All Annotation in spring      --> 
+
+	<!--  <bean class="com.springcore.lifecycle.Raninbow" name="r1"
+		init-method="init" destroy-method="destory">
+		<property name="color_name" value="ROYGBIV" />
+	</bean>
+
+
+	<bean class="com.springcore.lifecycle.Mansoon" name="m1">
+		<property name="month" value="June_September" />
+			</bean>-->
+		
+		<bean class="com.springcore.lifecycle.Example" name="ex">
+		<property name="subject" value="Maths" />
+		</bean>
+
+
+<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor">
+</bean>
+
+
+
+
+</beans>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ ">
+
+	<!-- is our beans -->
+	
+	<!-- Inject Primitive data types -->
+
+	<!-- <bean class="com.springcore.Student" name="student1"> <!- Value as 
+		Tag -->
+	<!-- <property name="studentId"> <value>111</value> </property> <property 
+		name="studentName"> <value>Shital</value> </property> <property name="studentAddress"> 
+		<value>Pune</value> </property> -->
+
+	<!-- Value as Attribute -->
+	<!-- <property name="studentId" value="112" /> <property name="studentName" 
+		value="Namrata" /> <property name="studentAddress" value="Delhi" /> </bean> -->
+
+	<!-- 2nd bean -->
+	<!-- <bean class="com.springcore.Student" name="student2"> <property name="studentId" 
+		value="113" /> <property name="studentName" value="Anuradha" /> <property 
+		name="studentAddress" value="A.Nagar" /> </bean> -->
+
+
+	<!-- Using p schema -->
+	<bean class="com.springcore.Student" name="student1"
+		p:studentId="111" p:studentName="Namrata" p:studentAddress="Pune" />
+	<bean class="com.springcore.Student" name="student2"
+		p:studentId="112" p:studentName="Anuradha" p:studentAddress="A.Nagar" />
+
+
+
+</beans>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ ">
+
+
+	<bean class="com.springcore.constructor.Certi" name="cer"
+		c:name="Python programming Language">
+		<!-- <constructor-arg value="Androide using Kotlin" /> -->
+		<!-- <constructor-arg> <value>Java with spring</value> </constructor-arg> -->
+	</bean>
+
+
+
+	<bean class="com.springcore.constructor.Person" name="person">
+		<constructor-arg value="Namrata" />
+		<!-- <constructor-arg value="12" type="int" /> -->
+		<constructor-arg value="12" />
+		<constructor-arg ref="cer"></constructor-arg>
+
+		<constructor-arg>
+			<list>
+				<value>9087657890</value>
+				<value>7890546789</value>
+				<null />
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<bean class="com.springcore.constructor.Addition" name="add">
+	<constructor-arg value="12" type="int" index="1" />
+	<constructor-arg value="10" type="int" index="0"/>
+	
+	</bean>
+
+
+
+
+</beans>
